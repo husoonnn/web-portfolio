@@ -42,7 +42,7 @@ nav {
   width: 250px;
   height: 100%;
 
-  margin-left: 200px;
+  
 }
 
 nav img {
@@ -86,7 +86,7 @@ nav a:hover:after {
 }
 
 .main {
-  margin-left: 470px;
+  margin-left: 300px;
 }
 
 .home {
@@ -134,7 +134,7 @@ nav a:hover:after {
 .skills {
   border-radius: 20px;
   height: 30px;
-  width: 600px;
+  width: 800px;
   background-color: #dbdbdb;
 }
 
@@ -151,7 +151,7 @@ nav a:hover:after {
   text-align: right;
   font-size: 25px;
   height: 100%;
-  width: 90%;
+  width: 100%;
   background-color: #1799b6;
 }
 
@@ -161,7 +161,7 @@ nav a:hover:after {
   text-align: right;
   font-size: 25px;
   height: 100%;
-  width: 80%;
+  width: 100%;
   background-color: #1799b6;
 }
 .php {
@@ -169,37 +169,23 @@ nav a:hover:after {
   text-align: right;
   font-size: 25px;
   height: 100%;
-  width: 75%;
+  width: 100%;
   background-color: #1799b6;
 }
 
-.wp {
-  text-align: right;
-  font-size: 25px;
-  height: 100%;
-  border-radius: 20px;
-  width: 80%;
-  background-color: #1799b6;
-}
 
-.jm {
-  text-align: right;
-  border-radius: 20px;
-  font-size: 25px;
-  height: 100%;
-  width: 65%;
-  background-color: #1799b6;
-}
 
 .services {
   text-align: left;
   margin-bottom: 50px;
   margin-left: 50px;
   margin-right: 50px;
+  min-height: 400 px;
 }
 
 .service-details div {
-  width: 70%;
+  text-align: top;
+  width: 100%;
   height: 120px;
   margin-bottom: 20px;
 }
@@ -255,7 +241,7 @@ footer p {
 
 /* //////////////////////////////////////////////////////////////////////// */
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 200px) {
   nav {
     margin-left: 0;
   }
@@ -288,4 +274,56 @@ footer p {
     height: 100%;
     margin-bottom: 60px;
   }
+}
+
+.row-header{
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.row-header1{
+  margin: 15px auto;
+  padding: 0px auto;
+}
+
+.row-content{
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px auto;
+  border-bottom: 1px ridge;
+  min-height: 250px;
+  
+}
+
+.row-content1{
+  margin: auto;
+  padding: 50px 0px 50px 0px auto;
+}
+
+
+.footer{
+  background-color: #d1c4e9;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+}
+
+.jumbotron{
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  background: #9575cd;
+  color: floralwhite;
+}
+
+address{
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
+}
+
+body{
+  padding: 50px 0px 0px 0px;
+  z-index:0; 
+}
+
+.navbar-dark{
+  background-color: #512da8;
 }
