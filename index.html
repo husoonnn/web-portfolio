@@ -1,329 +1,127 @@
-html {
-  scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
 
-html,
-header,
-nav,
-ul,
-body,
-img,
-p,
-div,
-h1,
-h3 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng|Titillium+Web|Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <title>Personal Website</title>
+    <nav>
+      <img src="profilePic.jpeg" alt="Profile Picture" />
+      <p class="headname">Tan Hu Soon</p>
+      <ul>
+        <li><a href="#home"> HOME</a></li>
+        <li><a href="#about"> ABOUT ME </a></li>
+        <li><a href="#services">SERVICES</a></li>
+      </ul>
+    </nav>
+  </head>
+  <body>
+    <div class="main">
+      <div class="home" id="home">
+        <img src="profilePic.jpeg" alt="Profile" />
+        <p class="namestart">
+          Hello, I am Hu Soon. <br />
+          An Aspiring Full-Stack Developer
+        </p>
+        <p class="nameabout">
+          Hi I am Hu Soon, a Penultimate Year Computer Science Undergraduate at Nanyang Technological University. I am currently specialising in Data Science and Artificial Intelligence. My experiences include Backend Software Engineering Intern at foodpanda and Product Management Intern at Shopee.
+        </p>
+        <div class="socialicon">
+        
+          <a href="https://github.com/husoonnn">
+            <img src="https://img.icons8.com/dusk/64/000000/github.png"
+          /></a>
+          <a href="mailto:husoon01@gmail.com"
+            ><img
+              src="https://img.icons8.com/cute-clipart/64/000000/envelope.png"
+          /></a>
+          
+        </div>
+      </div>
+      
+      <div class="about" id="about">
+        <h1>About Me</h1>
+        <p class="skill">Programming Languages: Golang, Python, Java, C, C++, Dart, SQL</p>
+        <div class="skills">
+          <div class="html"></div>
+        </div>
+        <p class="skill">Frontend: HTML5, CSS3, JavaScript, Flutter, React, NodeJS, Bootstrap</p>
+        <div class="skills">
+          <div class="js"></div>
+        </div>
+        <p class="skill">Software Application Skills: Drone, Morty, Datadog, Codacy, Apiary, Github, Git, Postman </p>
+        <div class="skills">
+          <div class="php"></div>
+        </div>
+      </div>
 
-a {
-  color: #000;
-  text-decoration: none;
-  position: relative;
-}
+      
+      <div class="services" id="services">
+        <h1>Services</h1>
+        <div class ="container ">
+          <div class = "row row-content align-items-center">   
+              <div class="col col-sm order-sm-first col-md">
+                  <div class="media">
+                      <img class="d-flex mr-3 img-thumbnail align-self-center" src="https://img.icons8.com/dusk/64/000000/api.png" alt="API">
+                      <div class="media-body">
+                          <h2 class="mt-0">Backend Development</h2>
+                          <p>•	Used GoLand IDE for coding, debugging and testing the applications module in Golang
+                            <br>•	Developed Restful webservices using Golang to perform our business activities
+                            <br>•	Involved in writing SQL queries using MySQL</p>
+                      </div>
+                       </div>
+                  </div>
+          </div>
+        
+          <div class = "row row-content align-items-center">   
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="https://img.icons8.com/dusk/64/000000/developer-mode.png" alt="Mobile">
+                    <div class="media-body">
+                        <h2 class="mt-0">Mobile App Development</h2>
+                        •	Developed a mobile application, compatible with both IOS and Android, that allow users to generate recipes using ingredients that are available in the fridge/pantry through computer vision
+              <br>•	Implemented and designed the technical architecture of the application based on the requirements
+              <br>•	Developed the front-end user interface using Flutter SDK and dart language in Android Studio
+                    </div>
+                     </div>
+                </div>
+        </div>
 
-h1 {
-  text-align: left;
-  font-size: 40px;
-  font-family: "Varela Round", sans-serif;
-  font-weight: normal;
-  margin-bottom: 30px;
-}
-
-nav {
-  position: fixed;
-  overflow: hidden;
-  background: #1799b6;
-  -webkit-box-shadow: 9px 9px 35px -8px rgba(0, 0, 0, 0.69);
-  -moz-box-shadow: 9px 9px 35px -8px rgba(0, 0, 0, 0.69);
-  box-shadow: 9px 9px 35px -8px rgba(0, 0, 0, 0.69);
-  text-align: center;
-  width: 250px;
-  height: 100%;
-
+        <div class = "row row-content align-items-center">   
+          <div class="col col-sm order-sm-first col-md">
+              <div class="media">
+                  <img class="d-flex mr-3 img-thumbnail align-self-center" src="https://img.icons8.com/dusk/64/000000/artificial-intelligence.png" alt="AI">
+                  <div class="media-body">
+                      <h2 class="mt-0">Data Science & Artificial Intelligence</h2>
+                      <p>• Data Mining & Analytics
+                        <br>•	Database System Principles
+                        <br>•	Machine Learning
+                        <br>•	Natural Language Processing
+                        <br>•	Neural Networks & Deep Learning
+                      </p>
+                  </div>
+                   </div>
+              </div>
+      </div>
   
-}
+         
 
-nav img {
-  border-radius: 50%;
-  margin-top: 30px;
-  width: 170px;
-  height: 170px;
-}
-
-.headname {
-  font-size: 30px;
-  font-family: "Ma Shan Zheng", cursive;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-nav ul {
-  font-family: "Titillium Web", sans-serif;
-  line-height: 50px;
-  font-size: 20px;
-
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-}
-li {
-  color: #000;
-}
-
-nav a:after {
-  border-radius: 1em;
-  border-top: 0.1em solid #1799b6;
-  content: "";
-  position: absolute;
-  right: 100%;
-  bottom: 0.14em;
-  left: 0;
-}
-
-nav a:hover:after {
-  right: 0;
-}
-
-.main {
-  margin-left: 300px;
-}
-
-.home {
-  text-align: center;
-  margin-bottom: 50px;
-  margin-left: 50px;
-}
-
-.home img {
-  margin-top: 100px;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-}
-
-.namestart {
-  font-family: "Varela Round", sans-serif;
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.nameabout {
-  font-family: "Titillium Web", sans-serif;
-
-  line-height: 30px;
-  margin-right: 50px;
-  margin-left: 50px;
-  font-size: 20px;
-}
-
-.socialicon img {
-  width: 40px;
-  height: 40px;
-  margin-top: 30px;
-}
-
-.about {
-  text-align: center;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.skills {
-  border-radius: 20px;
-  height: 30px;
-  width: 800px;
-  background-color: #dbdbdb;
-}
-
-.skill {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 20px;
-  text-align: left;
-  margin-bottom: 5px;
-  margin-top: 20px;
-}
-
-.html {
-  border-radius: 20px;
-  text-align: right;
-  font-size: 25px;
-  height: 100%;
-  width: 100%;
-  background-color: #1799b6;
-}
-
-.js {
-  border-radius: 20px;
-
-  text-align: right;
-  font-size: 25px;
-  height: 100%;
-  width: 100%;
-  background-color: #1799b6;
-}
-.php {
-  border-radius: 20px;
-  text-align: right;
-  font-size: 25px;
-  height: 100%;
-  width: 100%;
-  background-color: #1799b6;
-}
-
-
-
-.services {
-  text-align: left;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  min-height: 400 px;
-}
-
-.service-details div {
-  text-align: top;
-  width: 100%;
-  height: 120px;
-  margin-bottom: 20px;
-}
-
-.service-details div img {
-  margin-top: 10px;
-  width: 100px;
-  height: 100px;
-  float: left;
-}
-
-.service-details h3 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 26px;
-}
-
-.service-details p {
-  font-size: 20px;
-  margin-right: 10px;
-  font-family: "Varela Round", sans-serif;
-}
-
-.blog {
-  margin-left: 50px;
-}
-
-.blog img {
-  width: 300px;
-  height: 300px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-}
-
-.contact {
-  margin-left: 50px;
-}
-
-.contact-socialicon {
-  text-align: center;
-  margin-top: 150px;
-  margin-bottom: 20px;
-}
-
-/* /////////////////////footer///////////////////////////////// */
-
-footer p {
-  font-family: "Titillium Web", sans-serif;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-top: 200px;
-  text-align: right;
-}
-
-/* //////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 200px) {
-  nav {
-    margin-left: 0;
-  }
-
-  .skills {
-    width: 100%;
-  }
-  .service-details div {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  nav {
-    display: none;
-  }
-
-  .main {
-    margin: 0;
-  }
-
-  .skills {
-    width: 100%;
-  }
-
-  .service-details div {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 60px;
-  }
-}
-
-.row-header{
-  margin: 0px auto;
-  padding: 0px auto;
-}
-
-.row-header1{
-  margin: 15px auto;
-  padding: 0px auto;
-}
-
-.row-content{
-  margin: 0px auto;
-  padding: 50px 0px 50px 0px auto;
-  border-bottom: 1px ridge;
-  min-height: 250px;
-  
-}
-
-.row-content1{
-  margin: auto;
-  padding: 50px 0px 50px 0px auto;
-}
-
-
-.footer{
-  background-color: #d1c4e9;
-  margin: 0px auto;
-  padding: 20px 0px 20px 0px;
-}
-
-.jumbotron{
-  padding: 70px 30px 70px 30px;
-  margin: 0px auto;
-  background: #9575cd;
-  color: floralwhite;
-}
-
-address{
-  font-size: 80%;
-  margin: 0px;
-  color: #0f0f0f;
-}
-
-body{
-  padding: 50px 0px 0px 0px;
-  z-index:0; 
-}
-
-.navbar-dark{
-  background-color: #512da8;
-}
+        
+          
+ 
+    </div>
+    <footer>
+    
+    </footer>
+  </body>
+</html>
