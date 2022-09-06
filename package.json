@@ -1,7 +1,7 @@
 {
-  "name": "Web Portfolio",
+  "name": "confusion",
   "version": "1.0.0",
-  "description": "This is a website for my Portfolio",
+  "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
   "scripts": {
     "start": "npm run lite",
@@ -14,7 +14,7 @@
     "lite-server": "^2.3.0"
   },
   "dependencies": {
-    "bootstrap": "^4.6.2",
+    "bootstrap": "^4.0.0",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
