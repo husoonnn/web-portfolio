@@ -1,125 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="main.css" />
+<head>
+  <title>Portfolio Website-Brad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link
-      href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng|Titillium+Web|Varela+Round&display=swap"
-      rel="stylesheet"
-    />
-    <title>Personal Website</title>
-    <nav>
-      <img src="profilePic.jpeg" alt="Profile Picture" />
-      <p class="headname">Tan Hu Soon</p>
-      <ul>
-        <li><a href="#home"> HOME</a></li>
-        <li><a href="#about"> ABOUT ME </a></li>
-        <li><a href="#services">SERVICES</a></li>
-      </ul>
+<body>
+      <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" id="ntext"  href="#" href="#">Hu Soon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-text "  id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="ntext" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="ntext" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="ntext" href="#experiences">Experiences</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" id="ntext" href="#services">Services</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" id="ntext" href="#portfolio">Projects</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" id="ntext" href="#contact">Contact</a>
+                    </li> -->
+                </ul>
+                
+            </div>
+        </div>
     </nav>
-  </head>
-  <body>
-    <div class="main">
-      <div class="home" id="home">
-        <img src="profilePic.jpeg" alt="Profile" />
-        <p class="namestart">
-          Hello, I am Hu Soon. <br />
-          An Aspiring Full-Stack Developer
-        </p>
-        <p class="nameabout">
-          Hi I am Hu Soon, a Penultimate Year Computer Science Undergraduate at Nanyang Technological University. I am currently specialising in Data Science and Artificial Intelligence. My experiences include Backend Software Engineering Intern at foodpanda and Product Management Intern at Shopee.
-        </p>
-        <div class="socialicon">
-        
-          <a href="https://github.com/husoonnn">
-            <img src="https://img.icons8.com/dusk/64/000000/github.png"
-          /></a>
-          <a href="mailto:husoon01@gmail.com"
-            ><img
-              src="https://img.icons8.com/cute-clipart/64/000000/envelope.png"
-          /></a>
-          
-        </div>
-      </div>
-      
-      <div class="about" id="about">
-        <h1>About Me</h1>
-        <p class="skill">Programming Languages: Golang, Python, Java, C, C++, Dart, SQL</p>
-        <div class="skills">
-          <div class="html"></div>
-        </div>
-        <p class="skill">Frontend: HTML5, CSS3, JavaScript, Flutter, React, NodeJS, Bootstrap</p>
-        <div class="skills">
-          <div class="js"></div>
-        </div>
-        <p class="skill">Software Application Skills: Drone, Morty, Datadog, Codacy, Apiary, Github, Git, Postman </p>
-        <div class="skills">
-          <div class="php"></div>
-        </div>
-      </div>
 
-      
-      <div class="services" id="services">
-        <h1>Services</h1>
-
-          <div class = "row row-content align-items-center">   
-              <div class="col col-sm order-sm-first col-md">
-                  <div class="media">
-                      <img class="d-flex mr-3 img-thumbnail align-self-center" src="https://img.icons8.com/dusk/64/000000/api.png" alt="API">
-                      <div class="media-body">
-                          <h2 class="mt-0">Backend Development - foodpanda</h2>
-                          <p>•	Used GoLand IDE for coding, debugging and testing the applications module
-                            <br>•	Developed Restful webservices using Golang to perform our business activities
-                            <br>•	Performed debugging and exception handling in support to the software development
-                            <br>•	Involved in Unit Testing and ensuring unit testing codes are carried out rigorously and test coverages are within agreed standards
-                            <br>•	Involved in Load Testing for two critical endpoints using K6 framework
-                            <br>•	Involved in peer to peer code reviews and cross checked whether coding standards are being followed
-                            <br>•	Used Continuous delivery/ Continuous Integration tools Docker to deploy our application to AWS
-                            <br>•	Involved in writing SQL queries using MySQL
-                            </p>
-                      </div>
-                       </div>
-                  </div>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+      <div class="container-fluid">
+          <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+              <h2 class="hero_title">Hi, it's me Hu Soon</h2>
+              <p class="hero_desc">I am an Aspiring Software Engineer from Singapore</p>
           </div>
-        
-          <div class = "row row-content align-items-center">   
-            <div class="col col-sm order-sm-first col-md">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="https://img.icons8.com/dusk/64/000000/developer-mode.png" alt="Mobile">
-                    <div class="media-body">
-                        <h2 class="mt-0">Mobile App Development</h2>
-                        •	Developed a mobile application, compatible with both IOS and Android, that allow users to generate recipes using ingredients that are available in the fridge/pantry through computer vision
-              <br>•	Implemented and designed the technical architecture of the application based on the requirements
-              <br>•	Developed the front-end user interface using Flutter SDK and dart language in Android Studio
-                    </div>
-                     </div>
-                </div>
-        </div>
+          </div>
+      </div>
+    </section>
 
-        <div class = "row row-content align-items-center">   
-          <div class="col col-sm order-sm-first col-md">
-              <div class="media">
-                  <img class="d-flex mr-3 img-thumbnail align-self-center" src="https://img.icons8.com/dusk/64/000000/artificial-intelligence.png" alt="AI">
-                  <div class="media-body">
-                      <h2 class="mt-0">Data Science & Artificial Intelligence</h2>
-                      <p>• Data Mining & Analytics
-                        <br>•	Database System Principles
-                        <br>•	Machine Learning
-                        <br>•	Natural Language Processing
-                        <br>•	Neural Networks & Deep Learning
+    <!-- about section-->
+    <section id="about">
+      <div class="container mt-4 pt-4">
+          <h1 class="text-center">About Me</h1>
+          <div class="row mt-4">
+              <div class="col-lg-4">
+                  <img src="images/about.jpeg" class= "imageAboutPage" alt="">
+              </div>
+
+              <div class="col-lg-8">
+                  <p> Hi I am Hu Soon, a Penultimate Year Computer Science Undergraduate at Nanyang Technological University. I am currently specialising in 
+                      Data Science and Artificial Intelligence. My experiences include Backend Software Engineering Intern at foodpanda and Product Management Intern at Shopee.        
+                  </p>
+                  <div class="row mt-3">
+                      <div class="col-md-6">
+                          <ul>
+                              <li>Name: Tan Hu Soon</li>
+                              <li>Age: 24</li>
+                              <li>Occupation: Software Engineer</li>
+
+                          </ul>
+                      </div>
+                      <div class="col-md-6">
+                          <ul>
+                              <li>Hobbies: Basketball, Travelling, Extreme Sports</li>
+                              <li>Languages: English, Chinese, Burmese</li>
+                              <li>Expected Honours: Distinction</li>
+
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="row mt-3">
+                      <p> Programming Languages: Golang, Python, Java, C, C++, Dart, SQL
+                          <br>Frontend: HTML5, CSS3, JavaScript, Flutter, React, NodeJS, Bootstrap
+                          <br>Software Application Skills: Drone, Morty, Datadog, Codacy, Apiary, Github, Git, Postman
                       </p>
                   </div>
-                   </div>
               </div>
+          </div>
+  </section>
+
+
+   <!-- Experiences section-->
+   <section id="experiences">
+    <div class="container">
+        <h1 class="text-center">Experiences</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <img class=" rounded mx-auto d-block" src="https://www.foodpanda.com/wp-content/uploads/2022/01/Pau-Pau-image-2-1-e1641172026389-258x300.png" width="60" 
+                        height="72" alt="API">
+                        <h4 class="card-title mt-3">foodpanda <br>Backend Software Engineer Intern</h4>
+                        <p class="card-text mt-3">•	Used GoLand IDE for coding, debugging and testing the applications module
+                            <br>•	Developed Restful webservices using Golang to perform our business activities
+                            <br>•	Involved in Unit Testing and ensuring unit testing codes are carried out rigorously and test coverages are within agreed standards
+                            <br>•	Involved in setting up Load Testing environment to test for critical endpoints using K6 framework
+                            <br>•	Used Continuous delivery/ Continuous Integration tools Docker to deploy our application to AWS
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <img class=" rounded mx-auto d-block" src="https://www.iconlogovector.com/uploads/image/2022/01/shopee.png" width="72" 
+                        height="72" alt="Mobile">
+                        <h4 class="card-title mt-3">Shopee <br>Product Management Intern</h4>
+                        <p class="card-text mt-3">•	Engaged in stakeholder meetings with cross-functional team, and helped define go-to-market strategies 
+                            <br>•	Assisted with algo improvement on ranking/recall, coordinate A/B test using Postman, performed data analysis using DataSuite
+                            <br>•	Set up Google Analytics dashboards to keep track of overall performance and revenue 
+                            <br>•	Monitored dashboards as performance tracking and provide summary of abnormal points to team members
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <br>
+            
+</section>
+
+<br>
+
+  <!-- services section -->
+  <!-- <section id="services">
+    <div class="container">
+        <h1 class="text-center">Services</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <img class=" rounded mx-auto d-block" src="https://img.icons8.com/dusk/64/000000/api.png" alt="API">
+                        <h4 class="card-title mt-3">Backend Development </h4>
+                        <p class="card-text mt-3">•	Used GoLand IDE for coding, debugging and testing the applications module
+                            <br>•	Developed Restful webservices using Golang to perform our business activities
+                            <br>•	Involved in Unit Testing and ensuring unit testing codes are carried out rigorously and test coverages are within agreed standards
+                            <br>•	Involved in Load Testing for two critical endpoints using K6 framework
+                            <br>•	Used Continuous delivery/ Continuous Integration tools Docker to deploy our application to AWS
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <img class=" rounded mx-auto d-block" src="https://img.icons8.com/dusk/64/000000/developer-mode.png" alt="Mobile">
+                        <h4 class="card-title mt-3">Mobile App Development</h4>
+                        <p class="card-text mt-3">•	Developed a mobile application, compatible with both IOS and Android, that allow users to generate recipes using ingredients that are available in the fridge/pantry through computer vision
+                            <br>•	Implemented and designed the technical architecture of the application based on the requirements
+                            <br>•	Developed the front-end user interface using Flutter SDK and dart language in Android Studio
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <img class=" rounded mx-auto d-block" src="https://img.icons8.com/dusk/64/000000/artificial-intelligence.png" alt="AI">
+                        <h4 class="card-title mt-3">Data Science & Artificial Intelligence</h4>
+                        <p class="card-text mt-3">• Data Mining & Analytics
+                            <br>•	Database System Principles
+                            <br>•	Machine Learning
+                            <br>•	Natural Language Processing
+                            <br>•	Neural Networks & Deep Learning
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-search'></i>
+                        <h4 class="card-title mt-3">SEO</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-shield-alt'></i>
+                        <h4 class="card-title mt-3">DevOps</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-wrench'></i>
+                        <h4 class="card-title mt-3">QA</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- portfolio section-->
+<section id="portfolio">
+  <div class="container mt-3">
+      <h1 class="text-center">Projects</h1>
+      <div class="row">
+          <div class="col-lg-4 mt-4">
+              <div class="card portfolioContents">
+                  <img class="card-img-top" src="https://techcrunch.com/wp-content/uploads/2019/12/whisk-header.png" alt="Card image" style="width:100%" height="232">
+                  <div class="card-body d-flex flex-column">
+                      <h4 class="card-title">Recipe Ventures</h4>
+                      <p class="card-text">A mobile application, compatible with both IOS and Android, that allow users to generate recipes using ingredients that are available in the fridge/pantry through computer vision</p>
+                      <!-- <div class="text-center"> -->
+                          <a href="https://github.com/husoonnn/CZ3002-RECIPE-VENTURES" class="btn btn-success mt-auto">Link</a>
+                      <!-- </div> -->
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+              <div class="card portfolioContents ">
+                  <img class="card-img-top " src="https://photos5.appleinsider.com/gallery/46185-89903-43142-83791-C3F28533-EC94-4ACA-B2D9-D3BE75F5AF48-xl-xl.jpg" alt="Card image" style="width:100%" height="232">
+                  <div class="card-body d-flex flex-column">
+                      <h4 class="card-title">Weather App</h4>
+                      <p class="card-text">A weather app created using flutter sdk in dart language that updates weather according to real time according to location provided.</p>
+                      <!-- <div class="text-center"> -->
+                          <a href="https://github.com/husoonnn/Weather-app" class="btn btn-success mt-auto">Link</a>
+                      <!-- </div> -->
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+              <div class="card portfolioContents">
+                  <img class="card-img-top" src="https://files.realpython.com/media/PyGame-Update_Watermarked.bb0aa2dfe80b.jpg" alt="Card image" style="width:100%"  >
+                  <div class="card-body d-flex flex-column">
+                      <h4 class="card-title">Math Blasters</h4>
+                      <p class="card-text">MathBlasters is an interactive learning game coded using Pygame that aims to address the monotony and lack of engagement associated with learning mathematics through conventional pedagogical approaches. </p>
+                      <!-- <div class="text-center "> -->
+                          <a href="https://github.com/husoonnn/math_blasters-main" class="btn btn-success mt-auto">Link</a>
+                      <!-- </div> -->
+                  </div>
+              </div>
+          </div>
       </div>
-    <footer>
-    
-    </footer>
-  </body>
+      <br>
+
+      
+      <!-- <div class="row">
+          <div class="col-lg-4 mt-4">
+              <div class="card portfolioContent">
+                  <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                      <h4 class="card-title">Messaging Service</h4>
+                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <div class="text-center">
+                          <a href="#" class="btn btn-success">Link</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+              <div class="card portfolioContent">
+                  <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                      <h4 class="card-title">Twitter Clone</h4>
+                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <div class="text-center">
+                          <a href="#" class="btn btn-success">Link</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+              <div class="card portfolioContent">
+                  <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                      <h4 class="card-title">Blog App</h4>
+                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <div class="text-center">
+                          <a href="#" class="btn btn-success">Link</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div> -->
+</section>
+
+<!-- contact section-->
+<!-- <section id="contact">
+  <div class="container mt-3 contactContent">
+      <h1 class="text-center">Contact Me</h1>
+
+      <div class="row mt-4">
+          <div class="col-lg-6">
+             
+              
+              <div style="overflow:hidden;max-width:100%;width:500px;height:500px;">
+                <div id="googlemaps-canvas" style="height:100%; width:100%;max-width:100%;">
+                  <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Singapore&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                  </iframe>
+                </div>
+                <a class="googlemap-code-enabler" href="https://www.embed-map.com" id="make-mapdata">https://www.embed-map.com</a>
+                <style>#googlemaps-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                </style>
+                </div>
+          </div>
+
+          <div class="col-lg-6">
+             
+              <form>
+                  <input type="text" class="form-control form-control-lg" placeholder="Name">
+                  <input type="email" class="form-control mt-3" placeholder="Email">
+                  <input type="text" class="form-control mt-3" placeholder="Subject">
+                  <div class="mb-3 mt-3">
+                      <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                  </div>
+              </form>
+              <button type="button" class="btn btn-success mt-3">Contact Me</button>
+              
+          </div>
+
+      </div>
+  </div>
+</section> -->
+<!-- footer section-->
+<footer id="footer">
+    <div class="container-fluid">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <a href="https://github.com/husoonnn" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/tan-hu-soon/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script.js"></script>
+</body>
 </html>
